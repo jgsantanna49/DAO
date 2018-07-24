@@ -15,8 +15,26 @@ require_once("config.php");
 //echo json_encode($search);
 
 //carrega um usuário usando o login e a senha
+//$usuario = new Usuario();
+//$usuario->login("Alisson","12345");
+//echo $usuario;
+
+//inserindo um usuario sem o construtor
+//$aluno = new Usuario();
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("@lun0");
+//$aluno->insert();
+//echo $aluno;
+
+//inserindo um usuario com o construtor
+//$novo = new Usuario("novo","n0v0");
+//$novo->insert();
+//echo $novo;
+
+//fazendo um update no index
 $usuario = new Usuario();
-$usuario->login("Alisson","12345");
+$usuario->loadById(10);
+$usuario->update("Batman","bats&nh@");
 echo $usuario;
 
  ?>
