@@ -32,9 +32,15 @@ require_once("config.php");
 //echo $novo;
 
 //fazendo um update no index
+//$usuario = new Usuario();
+//$usuario->loadById(10);
+//$usuario->update("Batman","bats&nh@");
+//echo $usuario;
+
+//delete
 $usuario = new Usuario();
 $usuario->loadById(10);
-$usuario->update("Batman","bats&nh@");
+$usuario->delete();
 echo $usuario;
 
  ?>
